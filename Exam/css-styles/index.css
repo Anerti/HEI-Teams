@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #dfa408;
+    color: #F8F4E3;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+video {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100vh;
+    box-shadow: inset 0 0 25rem 15rem black;
+}
+
+.title-logo{
+    height: 10rem;
+    width: 10rem;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.head-description{
+    font-size: 1.5rem;
+    margin-right: 2em;
+    margin-left: 2em;
+    text-align: justify;
+}
+
+.downward-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 13%;
+    padding: .5rem 2rem .5rem 2rem;
+    background-color: #001948;
+    color: #F8F4E3;
+    border-radius: 4rem;
+}
+
+.downward-link:hover{
+    background-color: #F8F4E3;
+    color: #dfa408;
+    box-shadow: 0 0 1rem 1rem #dfa408;
+    transition: 1s;
+}
+
+.link-logo{
+    height: 3rem;
+    width: 3rem;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: #dfa408;
+}
+
+.content{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item-img{
+    height: 10rem;
+    width: 17rem;
+    border-radius: 2.5rem;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 55%;
+    justify-content: space-around;
+    border: #001948 solid 2px;
+    border-radius: 5rem;
+    flex-wrap: nowrap;
+    padding: 2rem;
+}
+
+.item:hover{
+    background-color: #001948;
+    color: #dfa408;
+    margin-top: -2rem;
+    transition: 1s;
+    box-shadow: 0 0 2rem 2rem #001948;
+}
+
+.item-description{
+    text-align: justify;
+}
+
+.item-link{
+    color:#001948;
+    background-color: #F8F4E3;
+    padding: .3rem 2rem .3rem 2rem;
+    border-radius: 1rem;
+}
+
+.item-link:hover{
+    color: #001948;
+    background-color: #dfa408;
+    padding: .3rem 2rem .3rem 2rem;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.downward-arrow{
+    rotate: 90deg;
+}
+
+.downward-arrow svg:hover, .upward-arrow svg:hover{
+    fill: #001948;
+}
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;;
+}
+
+.upward-arrow, .fixed-upward-arrow{
+    rotate: -90deg;
+}
+
+.info, .media-link{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.media, .author-info{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.social-link svg:hover{
+    fill: #F8F4E3;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+
+h3{
+    color:#001948;
+    text-align: center;
+}
+
+.foot-logo{
+    height: 20rem;
+    width: 20rem;
+}
+
+.author-info{
+    width: 100%;
+    background-color: #001948;
+    box-shadow: 0 -.5rem 3rem 2rem #001948;
+}
+
+.author{
+    color:#dfa408;
+}
+
+.fixed-upward-arrow{
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+}
+
+.fixed-upward-arrow svg:hover{
+    fill: #F8F4E3;
+}
+
+
+@media (max-width: 1080px){
+    .head{
+        box-shadow: inset 0 0 15rem 3rem black;
+    }
+
+    body{
+        font-size: .8rem;
+    }
+
+    .title-logo{
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .head-description{
+        font-size: .8rem;
+    }
+
+    .downward-link{
+        width: 13rem;
+    }
+
+    .item{
+        width: 15rem;
+        height: 12.5rem;
+        border-radius: 3rem;
+        font-size: .6rem;
+        padding: .5rem;
+    }
+
+    .item-img{
+        width: 7rem;
+        height: 4rem;
+        border-radius: 1rem;
+    }
+
+    .foot-logo{
+        height: 14rem;
+        width: 14rem;
+    }
+
+    .address{
+        height: 30%;
+    }
+
+}

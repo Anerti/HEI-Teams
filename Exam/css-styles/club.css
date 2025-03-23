@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: 'Anerti';  
+    src: url('../font/Mars.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+video {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.item{
+    box-shadow: inset 0 0 25rem 15rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title{
+    font-size: 4rem;
+    color: #dfa408;
+    font-family: 'Anerti', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 5rem;
+    padding-right: 5rem;
+    height: 90%;
+    width: 100%;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.info {
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    background-color: #dfa408;
+    border-radius: 2rem;
+}
+
+.info:hover{
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    background-color: #ffffff;
+    transition: 1s;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem 1rem #dfa408;
+}
+
+.info a{
+    color: #001948;
+}
+
+.join{
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    background-color: #001948;
+    border-radius: 2rem;
+}
+
+.join:hover{
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    background-color: #ffffff;
+    transition: 1s;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem 1rem #dfa408;
+}
+
+.join a{
+    color: #dfa408;
+}
+
+.logo{
+    height: 12rem;
+    width: 12rem;
+}
+
+.up, .down{
+    rotate: 90deg;
+}
+
+.backward{
+    rotate: 90deg;
+    position: fixed;
+    right: 2rem;
+    bottom: 1rem;
+}
+
+.up:hover svg, .down:hover svg, .backward:hover svg{
+    fill: #ffffff;
+}
+
+@media (max-width: 1000px){
+    .item{
+        box-shadow: inset 0 0 5rem 2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .title{
+        font-size: 2rem;
+        color: #dfa408;
+    }
+    
+    .description{
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    .logo{
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 2rem;
+        padding: 2rem;
+        padding-right: 2rem;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .info, .join{
+        padding: 1rem;
+    }
+
+    .info:hover, .join:hover{
+        padding: 1rem;
+    }
+  }

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEI Teams - Club Events</title>
+    <link rel="stylesheet" href="../../css-styles/event.css">
+    <link rel="icon" type="image/x-icon" href="../../assets/img/Logo - HEI Blanc.png">
+</head>
+<body>
+    <header class="head"> 
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo-navbar">
+                    <a href="../clubs/clubs.html">
+                        <img src="../../assets/img/Logo - HEI Jaune.png" alt="HEI logo" class="logo">
+                    </a>
+                    <a href="../clubs/clubs.html" class="link-description">Teams</a>
+                </div>
+                <div class="nav-link">
+                    <a href="../news/news.html" class="icon-string-link">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#dfa408">
+                                <path d="M160-120q-33 0-56.5-23.5T80-200v-560q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v560q0 33-23.5 56.5T800-120H160Zm0-80h640v-560H160v560Zm80-80h480v-80H240v80Zm0-160h160v-240H240v240Zm240 0h240v-80H480v80Zm0-160h240v-80H480v80ZM160-200v-560 560Z"/>
+                            </svg>
+                        </div>
+                        <div class="link-description">NEWS</div>
+                    </a>
+                    <a href="../events/events.html" class="icon-string-link">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#dfa408">
+                                <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/>
+                            </svg>
+                        </div>
+                        <div class="link-description">EVENTS</div>
+                    </a>
+                    <a href="../error.html" class="icon-string-link">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#dfa408">
+                                <path d="m160-419 101-101-101-101L59-520l101 101Zm540-21 100-160 100 160H700Zm-220-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-160q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640Zm0 40ZM0-240v-63q0-44 44.5-70.5T160-400q13 0 25 .5t23 2.5q-14 20-21 43t-7 49v65H0Zm240 0v-65q0-65 66.5-105T480-450q108 0 174 40t66 105v65H240Zm560-160q72 0 116 26.5t44 70.5v63H780v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5Zm-320 30q-57 0-102 15t-53 35h311q-9-20-53.5-35T480-370Zm0 50Z"/>
+                            </svg>
+                        </div>
+                        <div class="link-description">REJOINDRE UN CLUB</div>
+                    </a>
+                </div>
+            </div>
+        </nav> 
+        <nav class="vertical-navbar">
+            <div class="vertical-navbar-container">
+                <a href="#calendar" class="icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F4E3">
+                        <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/>
+                    </svg>
+                </a>
+                <a href="#foot" class="icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F4E3">
+                        <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm200-500 54-18 16-54q-32-48-77-82.5T574-786l-54 38v56l160 112Zm-400 0 160-112v-56l-54-38q-54 17-99 51.5T210-652l16 54 54 18Zm-42 308 46-4 30-54-58-174-56-20-40 30q0 65 18 118.5T238-272Zm242 112q26 0 51-4t49-12l28-60-26-44H378l-26 44 28 60q24 8 49 12t51 4Zm-90-200h180l56-160-146-102-144 102 54 160Zm332 88q42-50 60-103.5T800-494l-40-28-56 18-58 174 30 54 46 4Z"/>
+                    </svg>
+                </a>
+                <a href="#basket" class="icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F4E3">
+                        <path d="M162-520h114q-6-38-23-71t-43-59q-18 29-30.5 61.5T162-520Zm522 0h114q-5-36-17.5-68.5T750-650q-26 26-43 59t-23 71ZM210-310q26-26 43-59t23-71H162q5 36 17.5 68.5T210-310Zm540 0q18-29 30.5-61.5T798-440H684q6 38 23 71t43 59ZM358-520h82v-278q-53 8-98.5 29.5T260-712q39 38 64.5 86.5T358-520Zm162 0h82q8-57 33.5-105.5T700-712q-36-35-81.5-56.5T520-798v278Zm-80 358v-278h-82q-8 57-33.5 105.5T260-248q36 35 81.5 56.5T440-162Zm80 0q53-8 98.5-29.5T700-248q-39-38-64.5-86.5T602-440h-82v278Zm-40-318Zm0 400q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/>
+                    </svg>
+                </a>
+                <a href="#chess" class="icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F4E3">
+                        <path d="M160-80v-200q88-60 129-125t56-115H240v-80h90q-14-22-22-47t-8-53q0-75 52.5-127.5T480-880q75 0 127.5 52.5T660-700q0 28-8 53t-22 47h90v80H615q15 50 56 115t129 125v200H160Zm80-80h480v-80q-92-72-133-148.5T532-520H428q-14 55-55 131.5T240-240v80Zm240-440q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm0 440Zm0-540Z"/>
+                    </svg>
+                </a>
+                <a href="#gaming" class="icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F4E3">
+                        <path d="M189-160q-60 0-102.5-43T42-307q0-9 1-18t3-18l84-336q14-54 57-87.5t98-33.5h390q55 0 98 33.5t57 87.5l84 336q2 9 3.5 18.5T919-306q0 61-43.5 103.5T771-160q-42 0-78-22t-54-60l-28-58q-5-10-15-15t-21-5H385q-11 0-21 5t-15 15l-28 58q-18 38-54 60t-78 22Zm3-80q19 0 34.5-10t23.5-27l28-57q15-31 44-48.5t63-17.5h190q34 0 63 18t45 48l28 57q8 17 23.5 27t34.5 10q28 0 48-18.5t21-46.5q0 1-2-19l-84-335q-7-27-28-44t-49-17H285q-28 0-49.5 17T208-659l-84 335q-2 6-2 18 0 28 20.5 47t49.5 19Zm348-280q17 0 28.5-11.5T580-560q0-17-11.5-28.5T540-600q-17 0-28.5 11.5T500-560q0 17 11.5 28.5T540-520Zm80-80q17 0 28.5-11.5T660-640q0-17-11.5-28.5T620-680q-17 0-28.5 11.5T580-640q0 17 11.5 28.5T620-600Zm0 160q17 0 28.5-11.5T660-480q0-17-11.5-28.5T620-520q-17 0-28.5 11.5T580-480q0 17 11.5 28.5T620-440Zm80-80q17 0 28.5-11.5T740-560q0-17-11.5-28.5T700-600q-17 0-28.5 11.5T660-560q0 17 11.5 28.5T700-520Zm-360 60q13 0 21.5-8.5T370-490v-40h40q13 0 21.5-8.5T440-560q0-13-8.5-21.5T410-590h-40v-40q0-13-8.5-21.5T340-660q-13 0-21.5 8.5T310-630v40h-40q-13 0-21.5 8.5T240-560q0 13 8.5 21.5T270-530h40v40q0 13 8.5 21.5T340-460Zm140-20Z"/>
+                    </svg>
+                </a>
+                <a href="#tech" class="icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F4E3">
+                        <path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/>
+                    </svg>
+                </a>
+                <a href="#ping-pong" class="icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F4E3">
+                        <path d="m137-160-57-56 164-164q31-31 42.5-77.5T298-600q0-58 26-114t74-104q91-91 201-103t181 61q72 72 60 182T738-478q-48 48-104 74t-114 26q-97 0-142 11t-77 43L137-160Zm275-334q47 46 127 34t143-75q64-64 76.5-143.5T724-803q-48-48-125.5-36T456-763q-63 63-76.5 142.5T412-494ZM720-40q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113T720-40Zm0-80q33 0 56.5-23.5T800-200q0-33-23.5-56.5T720-280q-33 0-56.5 23.5T640-200q0 33 23.5 56.5T720-120Zm0-80Z"/>
+                    </svg>
+                </a>
+                <a href="#math" class="icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F4E3">
+                        <path d="M240-160v-80l260-240-260-240v-80h480v120H431l215 200-215 200h289v120H240Z"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>  
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="../../assets/videos/event_header.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="head-description">
+            <h1 class="title">
+                Ne manquez rien des événements de vos clubs préférés !
+            </h1>
+            <div class="description">
+                Que vous soyez passionné d'échecs, de sport, de technologie, de mathématiques ou de gaming, ne manquez pas les événements à venir. 
+                Rejoignez-nous pour des compétitions, des tournois et des rencontres inoubliables.
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="item" id="calendar">
+            <div class="item-title">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/>
+                    </svg>
+                </div>
+                <div id="calendar">A suivre ...</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="events">
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <div class="type" id="club_1">♟️ Échecs</div>
+                    <h2>Tournoi Interne du Club</h2>
+                    <div class="item-description">
+                        <div>Date: 12 avril, 14h-18h</div>
+                        <div>Affrontez les autres membres du club dans un tournoi amical et testez votre niveau avant les compétitions officielles.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <div class="type" id="club_2">⚽ Football</div>
+                    <h2>Match Amical</h2>
+                    <div class="item-description">
+                        <div>Date: 21 avril, 16h</div>
+                        <div>Venez encourager notre équipe lors de ce match préparatoire avant le tournoi de printemps !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <div class="type" id="club_3">🏀 Basket</div>
+                    <h2>Finale du Tournoi Printanier</h2>
+                    <div class="item-description">
+                        <div>Date: Samedi 5 avril, 14h-18h</div>
+                        <div>Un tournoi opposant plusieurs équipes pour tenter d’atteindre la finale. Inscrivez-vous en équipe ou venez soutenir les joueurs !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <div class="type" id="club_4">💻 Tech</div>
+                    <h2>Conférence IA & Cybersécurité </h2>
+                    <div class="item-description">
+                        <div>Date: Samedi 14 avril, 14h-18h</div>
+                        <div>Assistez à une conférence interactive sur l’impact de l’intelligence artificielle dans le domaine de la cybersécurité.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <div class="type" id="club_5">🎮 Gaming</div>
+                    <h2>Tournoi FIFA / eFootball </h2>
+                    <div class="item-description">
+                        <div>Date: 10 avril, 14h</div>
+                        <div>Qui sera le champion du football virtuel ? Venez affronter d'autres joueurs dans un tournoi intense !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+            </div>
+        </section>
+        <section class="item" id="foot">
+            <div class="item-title">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm200-500 54-18 16-54q-32-48-77-82.5T574-786l-54 38v56l160 112Zm-400 0 160-112v-56l-54-38q-54 17-99 51.5T210-652l16 54 54 18Zm-42 308 46-4 30-54-58-174-56-20-40 30q0 65 18 118.5T238-272Zm242 112q26 0 51-4t49-12l28-60-26-44H378l-26 44 28 60q24 8 49 12t51 4Zm-90-200h180l56-160-146-102-144 102 54 160Zm332 88q42-50 60-103.5T800-494l-40-28-56 18-58 174 30 54 46 4Z"/>
+                    </svg>
+                </div>
+                <div id="calendar">Événements à Venir – Club de Football</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm200-500 54-18 16-54q-32-48-77-82.5T574-786l-54 38v56l160 112Zm-400 0 160-112v-56l-54-38q-54 17-99 51.5T210-652l16 54 54 18Zm-42 308 46-4 30-54-58-174-56-20-40 30q0 65 18 118.5T238-272Zm242 112q26 0 51-4t49-12l28-60-26-44H378l-26 44 28 60q24 8 49 12t51 4Zm-90-200h180l56-160-146-102-144 102 54 160Zm332 88q42-50 60-103.5T800-494l-40-28-56 18-58 174 30 54 46 4Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="events">
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Tournoi Interne du Club</h2>
+                    <div class="item-description">
+                        <div>Date: 12 mai, 14h-18h</div>
+                        <div>Un tournoi amical entre les membres du club où chaque joueur pourra montrer son talent. L’occasion idéale de se mesurer aux autres et de tester de nouvelles stratégies.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Entraînement Spécial – Techniques et Tactiques</h2>
+                    <div class="item-description">
+                        <div>Date: 15 mai, 16h</div>
+                        <div>Séance dédiée à l’amélioration des techniques individuelles et collectives : dribbles, passes, tirs et stratégies défensives. Ouvert aux joueurs de tous niveaux.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Défi Endurance et Physique</h2>
+                    <div class="item-description">
+                        <div>Date: 21 mai, 14h</div>
+                        <div>Un entraînement intensif pour améliorer la condition physique et la résistance. Parcours d’endurance, tests de vitesse et exercices de récupération au programme !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Camp d’Entraînement Intensif </h2>
+                    <div class="item-description">
+                        <div>Date: 3 - 7 juin, 14h</div>
+                        <div>Une semaine d’entraînement où les joueurs perfectionneront leurs compétences sous la supervision d’entraîneurs expérimentés.
+                            Au programme : tactiques avancées, travail de cohésion et matchs d’application.
+                        </div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+            </div>
+        </section>
+        <section class="item" id="basket">
+            <div class="item-title">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M162-520h114q-6-38-23-71t-43-59q-18 29-30.5 61.5T162-520Zm522 0h114q-5-36-17.5-68.5T750-650q-26 26-43 59t-23 71ZM210-310q26-26 43-59t23-71H162q5 36 17.5 68.5T210-310Zm540 0q18-29 30.5-61.5T798-440H684q6 38 23 71t43 59ZM358-520h82v-278q-53 8-98.5 29.5T260-712q39 38 64.5 86.5T358-520Zm162 0h82q8-57 33.5-105.5T700-712q-36-35-81.5-56.5T520-798v278Zm-80 358v-278h-82q-8 57-33.5 105.5T260-248q36 35 81.5 56.5T440-162Zm80 0q53-8 98.5-29.5T700-248q-39-38-64.5-86.5T602-440h-82v278Zm-40-318Zm0 400q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/>
+                    </svg>
+                </div>
+                <div id="calendar">Événements à Venir – Club de Basket</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M162-520h114q-6-38-23-71t-43-59q-18 29-30.5 61.5T162-520Zm522 0h114q-5-36-17.5-68.5T750-650q-26 26-43 59t-23 71ZM210-310q26-26 43-59t23-71H162q5 36 17.5 68.5T210-310Zm540 0q18-29 30.5-61.5T798-440H684q6 38 23 71t43 59ZM358-520h82v-278q-53 8-98.5 29.5T260-712q39 38 64.5 86.5T358-520Zm162 0h82q8-57 33.5-105.5T700-712q-36-35-81.5-56.5T520-798v278Zm-80 358v-278h-82q-8 57-33.5 105.5T260-248q36 35 81.5 56.5T440-162Zm80 0q53-8 98.5-29.5T700-248q-39-38-64.5-86.5T602-440h-82v278Zm-40-318Zm0 400q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="events">
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Tournoi 3v3 Open</h2>
+                    <div class="item-description">
+                        <div>Date: 1 mai, 14h</div>
+                        <div>Formez votre trio et affrontez d'autres équipes dans ce tournoi rapide et dynamique. Matchs courts, intensité maximale et spectacle garanti !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Défi Dunk & Skills Challenge</h2>
+                    <div class="item-description">
+                        <div>Date: 10 mai, 16h</div>
+                        <div>Montrez votre agilité et votre explosivité dans ce défi combinant concours de dunks spectaculaires et parcours de dribbles chronométrés.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Compétition de 3-Points</h2>
+                    <div class="item-description">
+                        <div>Date: 2 juin, 14h</div>
+                        <div>Testez votre précision dans ce concours où chaque joueur devra marquer un maximum de paniers à 3 points en un temps limité. Qui sera le roi du tir à distance ?</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Match Amical (Équipe A vs Équipe B)</h2>
+                    <div class="item-description">
+                        <div>Date: 9 juin, 14h</div>
+                        <div>
+                            Un match d’entraînement où deux équipes du club s’affrontent pour peaufiner leurs stratégies et tester leur endurance. Un bon moment pour progresser et s’amuser !
+                        </div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Entraînement Spécial – Techniques et Tactiques</h2>
+                    <div class="item-description">
+                        <div>Date: 20 juin, 14h</div>
+                        <div>
+                            Séance d'entraînement axée sur les fondamentaux du basket : dribbles, passes, tirs et défense. Des exercices intensifs pour améliorer votre jeu et votre coordination.
+                        </div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+            </div>
+        </section>
+        <section class="item" id="chess">
+            <div class="item-title">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M160-80v-200q88-60 129-125t56-115H240v-80h90q-14-22-22-47t-8-53q0-75 52.5-127.5T480-880q75 0 127.5 52.5T660-700q0 28-8 53t-22 47h90v80H615q15 50 56 115t129 125v200H160Zm80-80h480v-80q-92-72-133-148.5T532-520H428q-14 55-55 131.5T240-240v80Zm240-440q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm0 440Zm0-540Z"/>
+                    </svg>
+                </div>
+                <div id="calendar">Événements à Venir – Club d'échec</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M160-80v-200q88-60 129-125t56-115H240v-80h90q-14-22-22-47t-8-53q0-75 52.5-127.5T480-880q75 0 127.5 52.5T660-700q0 28-8 53t-22 47h90v80H615q15 50 56 115t129 125v200H160Zm80-80h480v-80q-92-72-133-148.5T532-520H428q-14 55-55 131.5T240-240v80Zm240-440q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm0 440Zm0-540Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="events">
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Tournoi Blitz du 1er Mai</h2>
+                    <div class="item-description">
+                        <div>Date: 1 mai, 14h</div>
+                        <div>Participez à un tournoi de blitz où chaque joueur aura seulement 5 minutes par partie. Rapidité, précision et stratégie seront les clés du succès !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Simultanée contre un Maître International</h2>
+                    <div class="item-description">
+                        <div>Date: 10 mai, 16h</div>
+                        <div>Affrontez un Maître International dans une partie simultanée contre plusieurs joueurs à la fois. Une occasion unique de tester vos compétences !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Championnat de Parties Rapides</h2>
+                    <div class="item-description">
+                        <div>Date: 2 juin, 14h</div>
+                        <div>Un tournoi où chaque joueur dispose de 10 minutes par partie. Venez défier les meilleurs joueurs du club et montrer votre maîtrise du jeu d'échecs.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Match par Équipe (Club A vs Club B)</h2>
+                    <div class="item-description">
+                        <div>Date: 9 juin, 14h</div>
+                        <div>
+                            Une rencontre amicale entre deux clubs d'échecs où les joueurs s'affrontent en équipe. Stratégie collective et cohésion seront déterminantes pour la victoire !
+                        </div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Atelier Stratégie et Ouvertures</h2>
+                    <div class="item-description">
+                        <div>Date: 20 juin, 14h</div>
+                        <div>
+                            Un atelier interactif pour apprendre les meilleures ouvertures et stratégies d'attaque aux échecs. Analyse de parties célèbres et exercices pratiques au programme.
+                        </div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div> 
+            </div>
+        </section>
+        <section class="item" id="gaming">
+            <div class="item-title">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M189-160q-60 0-102.5-43T42-307q0-9 1-18t3-18l84-336q14-54 57-87.5t98-33.5h390q55 0 98 33.5t57 87.5l84 336q2 9 3.5 18.5T919-306q0 61-43.5 103.5T771-160q-42 0-78-22t-54-60l-28-58q-5-10-15-15t-21-5H385q-11 0-21 5t-15 15l-28 58q-18 38-54 60t-78 22Zm3-80q19 0 34.5-10t23.5-27l28-57q15-31 44-48.5t63-17.5h190q34 0 63 18t45 48l28 57q8 17 23.5 27t34.5 10q28 0 48-18.5t21-46.5q0 1-2-19l-84-335q-7-27-28-44t-49-17H285q-28 0-49.5 17T208-659l-84 335q-2 6-2 18 0 28 20.5 47t49.5 19Zm348-280q17 0 28.5-11.5T580-560q0-17-11.5-28.5T540-600q-17 0-28.5 11.5T500-560q0 17 11.5 28.5T540-520Zm80-80q17 0 28.5-11.5T660-640q0-17-11.5-28.5T620-680q-17 0-28.5 11.5T580-640q0 17 11.5 28.5T620-600Zm0 160q17 0 28.5-11.5T660-480q0-17-11.5-28.5T620-520q-17 0-28.5 11.5T580-480q0 17 11.5 28.5T620-440Zm80-80q17 0 28.5-11.5T740-560q0-17-11.5-28.5T700-600q-17 0-28.5 11.5T660-560q0 17 11.5 28.5T700-520Zm-360 60q13 0 21.5-8.5T370-490v-40h40q13 0 21.5-8.5T440-560q0-13-8.5-21.5T410-590h-40v-40q0-13-8.5-21.5T340-660q-13 0-21.5 8.5T310-630v40h-40q-13 0-21.5 8.5T240-560q0 13 8.5 21.5T270-530h40v40q0 13 8.5 21.5T340-460Zm140-20Z"/>
+                    </svg>
+                </div>
+                <div id="calendar">Événements à Venir – Club de Gaming</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M189-160q-60 0-102.5-43T42-307q0-9 1-18t3-18l84-336q14-54 57-87.5t98-33.5h390q55 0 98 33.5t57 87.5l84 336q2 9 3.5 18.5T919-306q0 61-43.5 103.5T771-160q-42 0-78-22t-54-60l-28-58q-5-10-15-15t-21-5H385q-11 0-21 5t-15 15l-28 58q-18 38-54 60t-78 22Zm3-80q19 0 34.5-10t23.5-27l28-57q15-31 44-48.5t63-17.5h190q34 0 63 18t45 48l28 57q8 17 23.5 27t34.5 10q28 0 48-18.5t21-46.5q0 1-2-19l-84-335q-7-27-28-44t-49-17H285q-28 0-49.5 17T208-659l-84 335q-2 6-2 18 0 28 20.5 47t49.5 19Zm348-280q17 0 28.5-11.5T580-560q0-17-11.5-28.5T540-600q-17 0-28.5 11.5T500-560q0 17 11.5 28.5T540-520Zm80-80q17 0 28.5-11.5T660-640q0-17-11.5-28.5T620-680q-17 0-28.5 11.5T580-640q0 17 11.5 28.5T620-600Zm0 160q17 0 28.5-11.5T660-480q0-17-11.5-28.5T620-520q-17 0-28.5 11.5T580-480q0 17 11.5 28.5T620-440Zm80-80q17 0 28.5-11.5T740-560q0-17-11.5-28.5T700-600q-17 0-28.5 11.5T660-560q0 17 11.5 28.5T700-520Zm-360 60q13 0 21.5-8.5T370-490v-40h40q13 0 21.5-8.5T440-560q0-13-8.5-21.5T410-590h-40v-40q0-13-8.5-21.5T340-660q-13 0-21.5 8.5T310-630v40h-40q-13 0-21.5 8.5T240-560q0 13 8.5 21.5T270-530h40v40q0 13 8.5 21.5T340-460Zm140-20Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="events">
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Tournoi Battle Royale</h2>
+                    <div class="item-description">
+                        <div>Date: 1 mai, 14h</div>
+                        <div>Affrontez d'autres joueurs dans une compétition intense où seul le dernier survivant remportera la victoire. Préparez vos meilleures stratégies !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Marathon Speedrun</h2>
+                    <div class="item-description">
+                        <div>Date: 5 mai, 16h</div>
+                        <div>Venez tenter de finir un jeu le plus rapidement possible et rivalisez avec les meilleurs speedrunners du club. Précision et optimisation seront essentielles !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Compétition FPS 5v5</h2>
+                    <div class="item-description">
+                        <div>Date: 10 mai, 18h</div>
+                        <div>Formez votre équipe et affrontez d'autres joueurs dans un tournoi compétitif sur un FPS populaire. Coordination et précision seront la clé !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Soirée Rétro Gaming</h2>
+                    <div class="item-description">
+                        <div>Date: 15 mai, 20h</div>
+                        <div>Redécouvrez les classiques du jeu vidéo dans une ambiance conviviale. Affrontez d'autres joueurs sur des titres emblématiques du passé !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Match League of Legends</h2>
+                    <div class="item-description">
+                        <div>Date: 20 mai, 14h</div>
+                        <div>Un affrontement intense en 5v5 sur League of Legends. Formez votre équipe, affinez vos stratégies et luttez pour la victoire !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Tournoi de jeux de combat</h2>
+                    <div class="item-description">
+                        <div>Date: 25 mai, 16h</div>
+                        <div>Montrez vos talents sur les jeux de combat les plus populaires et affrontez d'autres joueurs dans un tournoi intense en 1v1.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Lan Party – Jeux multijoueurs</h2>
+                    <div class="item-description">
+                        <div>Date: 30 mai, 18h</div>
+                        <div>Une soirée LAN où vous pourrez jouer à vos jeux multijoueurs préférés en réseau local avec d'autres membres du club. Ambiance garantie !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Tournoi Stratégie & Gestion</h2>
+                    <div class="item-description">
+                        <div>Date: 5 juin, 14h</div>
+                        <div>Testez vos compétences sur des jeux de stratégie et de gestion en affrontant d'autres joueurs dans un défi où réflexion et planification sont essentielles.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Workshop Streaming & Création de Contenu</h2>
+                    <div class="item-description">
+                        <div>Date: 10 juin, 16h</div>
+                        <div>Apprenez à devenir un créateur de contenu gaming avec des conseils sur le streaming, le montage vidéo et la gestion d'une communauté en ligne.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Grande Finale du Tournoi Esport</h2>
+                    <div class="item-description">
+                        <div>Date: 20 juin, 18h</div>
+                        <div>Venez assister à la grande finale où les meilleurs joueurs du club s'affronteront pour remporter le titre ultime dans leur discipline.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                
+            </div>
+        </section>
+        <section class="item" id="tech">
+            <div class="item-title">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/>
+                    </svg>
+                </div>
+                <div id="calendar">Événements à Venir – Club de Tech</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="events">
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Hackathon Développement Web</h2>
+                    <div class="item-description">
+                        <div>Date: 1 mai, 14h</div>
+                        <div>Rejoignez un hackathon où vous devrez concevoir un projet web innovant en équipe. Mettez vos compétences en HTML, CSS et JavaScript à l’épreuve !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Atelier Cybersécurité – Initiation au Pentesting</h2>
+                    <div class="item-description">
+                        <div>Date: 5 mai, 16h</div>
+                        <div>Apprenez les bases du pentesting en explorant des outils comme Kali Linux, Metasploit et Wireshark pour identifier les vulnérabilités.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Conférence sur l’Intelligence Artificielle</h2>
+                    <div class="item-description">
+                        <div>Date: 10 mai, 18h</div>
+                        <div>Un expert en IA viendra discuter des avancées récentes en deep learning, en traitement du langage naturel et en vision par ordinateur.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Compétition de Programmation</h2>
+                    <div class="item-description">
+                        <div>Date: 15 mai, 14h</div>
+                        <div>Affrontez d’autres développeurs dans un concours d’algorithmes et de résolution de problèmes. Qui sera le plus rapide et efficace en code ?</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Workshop Blockchain & Cryptomonnaies</h2>
+                    <div class="item-description">
+                        <div>Date: 20 mai, 16h</div>
+                        <div>Découvrez comment fonctionne la blockchain, les smart contracts et l’impact des cryptomonnaies sur l’économie numérique.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Hack The Box – Challenge Sécurité</h2>
+                    <div class="item-description">
+                        <div>Date: 25 mai, 18h</div>
+                        <div>Testez vos compétences en hacking éthique en résolvant des défis pratiques et en exploitant des vulnérabilités simulées.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Débat : L’Impact de l’IA sur l’Emploi</h2>
+                    <div class="item-description">
+                        <div>Date: 30 mai, 18h</div>
+                        <div>Un échange autour de l’avenir du travail avec l’essor de l’automatisation et de l’intelligence artificielle.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Création d’un Bot Discord avec Python</h2>
+                    <div class="item-description">
+                        <div>Date: 5 juin, 14h</div>
+                        <div>Apprenez à coder un bot Discord capable de répondre aux messages, modérer un serveur et exécuter des commandes personnalisées.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>                
+            </div>
+        </section>
+        <section class="item" id="ping-pong">
+            <div class="item-title">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="m137-160-57-56 164-164q31-31 42.5-77.5T298-600q0-58 26-114t74-104q91-91 201-103t181 61q72 72 60 182T738-478q-48 48-104 74t-114 26q-97 0-142 11t-77 43L137-160Zm275-334q47 46 127 34t143-75q64-64 76.5-143.5T724-803q-48-48-125.5-36T456-763q-63 63-76.5 142.5T412-494ZM720-40q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113T720-40Zm0-80q33 0 56.5-23.5T800-200q0-33-23.5-56.5T720-280q-33 0-56.5 23.5T640-200q0 33 23.5 56.5T720-120Zm0-80Z"/>
+                    </svg>
+                </div>
+                <div id="calendar">Événements à Venir – Club de Ping-pong</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="m137-160-57-56 164-164q31-31 42.5-77.5T298-600q0-58 26-114t74-104q91-91 201-103t181 61q72 72 60 182T738-478q-48 48-104 74t-114 26q-97 0-142 11t-77 43L137-160Zm275-334q47 46 127 34t143-75q64-64 76.5-143.5T724-803q-48-48-125.5-36T456-763q-63 63-76.5 142.5T412-494ZM720-40q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113T720-40Zm0-80q33 0 56.5-23.5T800-200q0-33-23.5-56.5T720-280q-33 0-56.5 23.5T640-200q0 33 23.5 56.5T720-120Zm0-80Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="events">
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Tournoi Ouvert de Ping-Pong</h2>
+                    <div class="item-description">
+                        <div>Date: 1 mai, 14h</div>
+                        <div>Un tournoi ouvert à tous les niveaux, venez montrer vos compétences et tenter de décrocher la première place !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Compétition en Double</h2>
+                    <div class="item-description">
+                        <div>Date: 5 mai, 16h</div>
+                        <div>Formez une équipe avec un partenaire et affrontez d'autres duos dans un tournoi de doubles intense et stratégique.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Défi Contre le Champion du Club</h2>
+                    <div class="item-description">
+                        <div>Date: 10 mai, 18h</div>
+                        <div>Aurez-vous ce qu'il faut pour affronter le champion du club ? Un match en un contre un pour tester votre niveau !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Entraînement Spécial: Techniques Avancées</h2>
+                    <div class="item-description">
+                        <div>Date: 15 mai, 14h</div>
+                        <div>Perfectionnez votre jeu avec des exercices ciblés sur les effets, la vitesse et la précision sous la supervision de nos entraîneurs.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Compétition Amicale Interclubs</h2>
+                    <div class="item-description">
+                        <div>Date: 20 mai, 16h</div>
+                        <div>Un événement où notre club affronte d'autres clubs de la région dans une ambiance conviviale mais compétitive !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Soirée Ping-Pong & Pizza</h2>
+                    <div class="item-description">
+                        <div>Date: 25 mai, 18h</div>
+                        <div>Une soirée détente avec des matchs amicaux, des mini-jeux et bien sûr, de la pizza pour tous les participants !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Tournoi de Fin de Saison</h2>
+                    <div class="item-description">
+                        <div>Date: 30 mai, 18h</div>
+                        <div>Clôturez la saison avec un grand tournoi où les meilleurs joueurs s'affronteront pour le titre de champion du club.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>                
+            </div>
+        </section>
+        <section class="item" id="math">
+            <div class="item-title">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M240-160v-80l260-240-260-240v-80h480v120H431l215 200-215 200h289v120H240Z"/>
+                    </svg>
+                </div>
+                <div id="calendar">Événements à Venir – Club de Math</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F8F4E3">
+                        <path d="M240-160v-80l260-240-260-240v-80h480v120H431l215 200-215 200h289v120H240Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="events">
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Compétition de Mathématiques</h2>
+                    <div class="item-description">
+                        <div>Date: 1 mai, 14h</div>
+                        <div>Affrontez d'autres passionnés de mathématiques dans un tournoi où logique, rapidité et créativité seront mises à l'épreuve !</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Atelier: Résolution de Problèmes Complexes</h2>
+                    <div class="item-description">
+                        <div>Date: 5 mai, 16h</div>
+                        <div>Participez à un atelier interactif où nous explorerons des méthodes avancées pour résoudre des problèmes mathématiques complexes.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Défi Mathématique: Casse-têtes et énigmes</h2>
+                    <div class="item-description">
+                        <div>Date: 10 mai, 18h</div>
+                        <div>Mettez votre logique à l'épreuve avec une série de casse-têtes et d'énigmes mathématiques stimulantes.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Conférence: Mathématiques et Intelligence Artificielle</h2>
+                    <div class="item-description">
+                        <div>Date: 15 mai, 14h</div>
+                        <div>Découvrez comment les mathématiques sont utilisées dans l'intelligence artificielle et l'apprentissage automatique.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Tournoi de Calcul Mental</h2>
+                    <div class="item-description">
+                        <div>Date: 20 mai, 16h</div>
+                        <div>Un défi intense où rapidité et précision sont essentielles pour résoudre des opérations mathématiques en un temps record.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>
+                <div class="club-event">
+                    <img src="../../assets/img/event.jpeg" alt="illustration" class="item-img">
+                    <h2>Soirée Mathématiques et Jeux</h2>
+                    <div class="item-description">
+                        <div>Date: 25 mai, 18h</div>
+                        <div>Une soirée amusante avec des jeux de stratégie, des énigmes et des défis mathématiques à résoudre en équipe.</div>
+                    </div>
+                    <a href="../error.html" class="join-link">Participer</a>
+                </div>               
+            </div>
+        </section>
+    </main>
+    <footer class="author">
+        <div>Designed and engireered by <a href="https://github.com/Anerti/" target="_blank"><span class="list">Anerti</span></a></div>
+        <div>&copy; 2025 HEI Madagascar. All rights reserved.</div>
+    </footer>
+</body>
+</html>
